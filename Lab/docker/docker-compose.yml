@@ -1,0 +1,11 @@
+version: '3'
+services:
+  test:
+    build: ../
+    environment:
+      # overwrite the FLAG here
+      FLAG: "flag{Bin4ry_Exploitation_is_fun!}"
+    ports:
+      # service port
+      - 9999:9999
+    restart: unless-stopped
